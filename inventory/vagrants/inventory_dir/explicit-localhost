@@ -1,8 +1,8 @@
-# ini format for configuring access to localhost as a target 
-localhost ansible_connection="local" ansible_python_interpreter="/usr/local/bin/python3"
+# ini format for configuring access to localhost as a target
+localhost ansible_connection="local" ansible_python_interpreter="/usr/bin/env python3"
 
 # Notes (several challenges implicit below)
-# https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#ansible-python-interpreter 
+# https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#ansible-python-interpreter
   # ansible_python_interpreter is one of:
     # - path (to desired remote python interpreter)
     # - automatic discovery mode (auto, auto_silent, auto_legacy, ... )

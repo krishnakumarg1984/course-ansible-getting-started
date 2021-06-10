@@ -6,4 +6,13 @@ ansible-inventory --list
 
 Default module is the command module
 
-ansible -m command
+ansible -m command -a "git config --global --list" <inventory list>
+ansible -m command -a "git config --global --list" all
+ansible -m command -a "git config --global --list" vagrant
+ansible -m command -a "git config --global --list" centos
+ansible -m command -a "git config --global --list" ubuntu
+
+ansible -m setup -a "filter=ansible_pkg_mgr" all
+ansible -m setup -a "filter=ansible_pkg_mgr" centos
+
+vagrant ssh-config
