@@ -1,2 +1,9 @@
 ansible -m copy -a "src=master.gitconfig dest=~/.gitconfig" --check localhost
 ansible -m copy -a "src=master.gitconfig dest=~/.gitconfig" --check --diff localhost
+
+ansible-config list
+ansible-inventory --list
+
+Default module is the command module
+
+ansible -m command

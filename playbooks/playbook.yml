@@ -14,7 +14,6 @@
     - homebrew:
         name: jq
         state: latest
-
-  # ansible -m homebrew -a "name=bat state=latest" localhost
-  # ansible -m homebrew -a "name=jq state=latest" localhost
+# ansible -m homebrew -a "name=bat state=latest" localhost
+# ansible -m homebrew -a "name=jq state=latest" localhost
 # ansible-playbook "name_of_playbook.yml" -vvvv
