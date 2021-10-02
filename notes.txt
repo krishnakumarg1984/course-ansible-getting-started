@@ -16,3 +16,6 @@ ansible -m setup -a "filter=ansible_pkg_mgr" all
 ansible -m setup -a "filter=ansible_pkg_mgr" centos
 
 vagrant ssh-config
+ansible-doc
+ansible-doc -t shell --list
+
